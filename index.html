@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Daeyeong Cho — Software & Cloud Engineer. Cloud Native, Microservices, Kubernetes, LLM/RAG, Multi-Cloud." />
+  <meta name="description" content="Daeyeong Cho — Software & Cloud Engineering. Cloud Native, Microservices, Containers, LLM/RAG, Multi-Cloud." />
   <meta name="author" content="Daeyeong Cho" />
-  <meta property="og:title" content="Daeyeong Cho | Software & Cloud Engineer" />
-  <meta property="og:description" content="Cloud Native · Microservices · LLM/RAG · Multi-Cloud" />
+  <meta property="og:title" content="Daeyeong Cho | Software & Cloud Engineering" />
+  <meta property="og:description" content="Cloud Native · Microservices · Containers · LLM/RAG · Multi-Cloud" />
   <meta property="og:type" content="website" />
-  <title>Daeyeong Cho | Software & Cloud Engineer</title>
+  <title>Daeyeong Cho | Software & Cloud Engineering</title>
   <link rel="preconnect" href="https://avatars.githubusercontent.com" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
@@ -19,8 +19,9 @@
       <nav class="nav" aria-label="주요 메뉴">
         <a href="#about">About</a>
         <a href="#stack">Tech Stack</a>
-        <a href="#work">Experience</a>
+        <a href="#experience">Experience</a>
         <a href="#research">Research & IP</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -30,20 +31,21 @@
     <section class="hero section">
       <div class="container hero-grid">
         <div>
-          <p class="eyebrow">SOFTWARE · CLOUD · AI</p>
+          <p class="eyebrow">SOFTWARE · INFRASTRUCTURE · AI</p>
           <h1>Daeyeong Cho</h1>
-          <p class="hero-role">Software & Cloud Engineer</p>
-          <p class="hero-keywords">Cloud Native · Microservices · LLM/RAG · Multi-Cloud</p>
+          <p class="hero-role">Software & Cloud Engineering</p>
+          <p class="hero-keywords">Cloud Native · Microservices · Containers · LLM/RAG · Multi-Cloud</p>
           <p class="hero-copy">
-            클라우드 네이티브 애플리케이션과 컨테이너 기반 마이크로서비스를 중심으로,
-            AI를 활용한 배포 지원·오류 식별과 멀티 클라우드 관리 기술을 연구·개발해 왔습니다.
+            컨테이너 기반 마이크로서비스를 중심으로 클라우드 네이티브 환경을 다루며,<br class="desktop-break" />
+            소프트웨어 개발과 클라우드 인프라 운영에 AI를 접목하는 경험을 쌓아왔습니다.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="https://github.com/DaeyeongCho" target="_blank" rel="noreferrer">GitHub</a>
             <a class="button secondary" href="https://orcid.org/0009-0005-3903-5723" target="_blank" rel="noreferrer">ORCID</a>
           </div>
         </div>
-        <div class="profile-card">
+
+        <aside class="profile-card" aria-label="프로필 요약">
           <img class="avatar" src="https://avatars.githubusercontent.com/u/112680274?v=4" alt="Daeyeong Cho GitHub profile" />
           <div class="profile-meta">
             <strong>Daeyeong Cho</strong>
@@ -52,23 +54,22 @@
           <div class="mini-tags" aria-label="핵심 기술">
             <span>Kubernetes</span>
             <span>Docker</span>
+            <span>AWS</span>
+            <span>GCP</span>
             <span>Python</span>
-            <span>RAG</span>
+            <span>LLM/RAG</span>
           </div>
-        </div>
+        </aside>
       </div>
     </section>
 
     <section id="about" class="section section-muted">
       <div class="container narrow">
         <p class="section-label">ABOUT</p>
-        <h2>연구 경험을 실제 엔지니어링 문제 해결로 연결합니다.</h2>
-        <p class="lead">
-          부산대학교 소프트웨어공학 연구실에서 컨테이너 기반 마이크로서비스 지원 기술을 연구하며
-          LLM Fine-tuning 기반 배치·약결합과 RAG 기반 오류 식별 기술을 다뤘습니다.
-          또한 AWS, Google Cloud, Microsoft Azure가 결합된 멀티 클라우드 환경에서
-          메타데이터 관리, AI 가속기 자원 관리, Managed Kubernetes 기반 인프라와
-          모니터링 환경 구성을 경험했습니다.
+        <h2>소프트웨어 개발부터 클라우드 인프라까지</h2>
+        <p class="lead about-copy">
+          <strong>컨테이너 기반 마이크로서비스와 멀티 클라우드 지원 기술을 연구·개발하며, 소프트웨어와 클라우드 인프라를 함께 다뤄왔습니다.</strong>
+          Kubernetes와 Docker 기반 환경에서 LLM Fine-tuning·RAG를 활용한 배포·오류 식별 기술을 구현했으며, AWS·Google Cloud·Microsoft Azure 환경에서 멀티 클라우드 메타데이터와 AI 가속기 자원 관리, Managed Kubernetes 기반 인프라와 모니터링 환경을 구성했습니다.
         </p>
       </div>
     </section>
@@ -78,57 +79,52 @@
         <p class="section-label">TECH STACK</p>
         <h2>주요 기술</h2>
         <div class="card-grid stack-grid">
-          <article class="card">
-            <h3>Languages & Development</h3>
-            <p>Python · Java · C/C++ · Go · HTML/CSS · React</p>
+          <article class="card stack-card">
+            <h3>Software Development</h3>
+            <div class="tech-tags">
+              <span>Python</span><span>Java</span><span>C/C++</span><span>Go</span><span>React</span><span>Git/GitHub</span><span>GitHub Copilot</span><span>OpenAI Codex</span>
+            </div>
           </article>
-          <article class="card">
-            <h3>Cloud & Container</h3>
-            <p>Kubernetes · Docker · AWS · Google Cloud · Microsoft Azure · Linux</p>
+          <article class="card stack-card">
+            <h3>Cloud & Infrastructure</h3>
+            <div class="tech-tags">
+              <span>Kubernetes</span><span>Docker</span><span>AWS</span><span>Google Cloud</span><span>Microsoft Azure</span><span>Linux</span>
+            </div>
           </article>
-          <article class="card">
-            <h3>AI & RAG</h3>
-            <p>OpenAI API · LangChain · ChromaDB · Retrieval-Augmented Generation · LLM Fine-tuning</p>
+          <article class="card stack-card">
+            <h3>AI & LLM</h3>
+            <div class="tech-tags">
+              <span>LLM/RAG</span><span>LLM Fine-tuning</span><span>LangChain</span><span>ChromaDB</span><span>OpenAI API</span>
+            </div>
           </article>
-          <article class="card">
+          <article class="card stack-card">
             <h3>Observability & Testing</h3>
-            <p>Prometheus · Grafana · Jaeger · Apache JMeter</p>
+            <div class="tech-tags">
+              <span>Prometheus</span><span>Grafana</span><span>Jaeger</span><span>Apache JMeter</span>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="work" class="section section-muted">
+    <section id="experience" class="section section-muted">
       <div class="container">
         <p class="section-label">EXPERIENCE</p>
         <h2>핵심 경험</h2>
         <div class="timeline">
-          <article class="timeline-item">
+          <article class="timeline-item experience-item">
             <div class="timeline-date">2024.01 — 2026.02</div>
             <div>
-              <h3>Pusan National University · Software Engineering Laboratory</h3>
-              <p class="muted">Researcher</p>
-              <ul>
-                <li>Container-based microservice deployment & loose coupling</li>
-                <li>RAG-based deployment error identification and resolution</li>
-                <li>Multi-cloud metadata & AI accelerator resource management</li>
-                <li>Managed Kubernetes infrastructure and observability environment</li>
-              </ul>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">2024.03 — 2026.02</div>
-            <div>
-              <h3>Pusan National University Graduate School</h3>
-              <p class="muted">M.S. in Information Convergence Engineering (Computer Engineering)</p>
-              <p>Thesis: RAG를 적용한 컨테이너 기반 마이크로서비스의 오류 식별 방법</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">2022.03 — 2024.02</div>
-            <div>
-              <h3>Dongguk University WISE</h3>
-              <p class="muted">B.S. · Computer Engineering</p>
+              <h3>Pusan National University · Software Engineering Laboratory (SELab)</h3>
+              <p class="role-line">Researcher</p>
+              <p class="experience-summary">
+                컨테이너 기반 마이크로서비스와 멀티 클라우드 지원 기술을 중심으로 연구·개발을 수행하며, 소프트웨어 구현부터 클라우드 인프라 구성과 모니터링까지 다양한 기술 업무를 경험했습니다.
+              </p>
+              <div class="experience-points">
+                <p><strong>Microservices & AI</strong><span>LLM Fine-tuning·RAG 기반 마이크로서비스 배포, 약결합 및 오류 식별·운영 지원 기술 구현</span></p>
+                <p><strong>Multi-Cloud & Infrastructure</strong><span>AWS·Google Cloud·Microsoft Azure 기반 멀티 클라우드 메타데이터 및 AI 가속기 자원 관리, Managed Kubernetes 인프라 구성</span></p>
+                <p><strong>Observability & Validation</strong><span>Prometheus·Grafana·Jaeger 기반 모니터링 및 운영 정보 분석, Apache JMeter 등을 활용한 기능·성능 검증</span></p>
+              </div>
             </div>
           </article>
         </div>
@@ -139,6 +135,7 @@
       <div class="container">
         <p class="section-label">RESEARCH & IP</p>
         <h2>연구 및 지식재산 성과</h2>
+
         <div class="stats" aria-label="연구 성과 요약">
           <div class="stat"><strong>6</strong><span>Academic Papers</span></div>
           <div class="stat"><strong>1</strong><span>Patent</span></div>
@@ -149,23 +146,43 @@
         <div class="card-grid research-grid">
           <article class="card feature-card">
             <span class="pill">Microservices</span>
-            <h3>LLM 기반 마이크로서비스 배치·약결합 지원</h3>
-            <p>Kubernetes 명세와 BCE 패턴을 바탕으로 마이크로서비스 유형을 식별하고 사용자 요구사항에 맞는 배치·약결합을 지원하는 방법을 연구했습니다.</p>
+            <h3>마이크로서비스 배치 및 약결합 지원</h3>
+            <p>Kubernetes 명세와 BCE 패턴, LLM Fine-tuning을 활용해 마이크로서비스 유형을 식별하고 사용자 요구사항에 따른 약결합·배포를 지원하는 기술을 연구·개발했습니다.</p>
           </article>
           <article class="card feature-card">
-            <span class="pill">RAG</span>
-            <h3>컨테이너 마이크로서비스 오류 식별</h3>
-            <p>Kubernetes 운영 정보와 Jaeger 통신 흐름을 분석하고 LangChain·ChromaDB 기반 RAG를 활용해 오류 식별과 해소 방안 생성을 지원했습니다.</p>
+            <span class="pill">LLM/RAG</span>
+            <h3>마이크로서비스 오류 식별 및 운영 지원</h3>
+            <p>Kubernetes 운영 정보와 Jaeger 기반 통신 흐름을 분석하고, RAG를 활용해 오류를 식별하고 해소 방안을 생성하는 기술을 연구·개발했습니다.</p>
           </article>
           <article class="card feature-card">
             <span class="pill">Multi-Cloud</span>
             <h3>멀티 클라우드 자원 관리</h3>
-            <p>멀티 클라우드 메타데이터와 AI 가속기 자원 관리, Managed Kubernetes 기반 인프라 및 모니터링 환경 구성 경험을 보유하고 있습니다.</p>
+            <p>멀티 클라우드 메타데이터와 AI 가속기 자원을 관리하고, Managed Kubernetes와 Prometheus·Grafana 기반 인프라 및 모니터링 환경을 구성했습니다.</p>
           </article>
         </div>
 
         <div class="center-actions">
           <a class="button secondary" href="https://orcid.org/0009-0005-3903-5723" target="_blank" rel="noreferrer">전체 연구 성과는 ORCID에서 보기</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section section-muted">
+      <div class="container">
+        <p class="section-label">EDUCATION</p>
+        <h2>학력</h2>
+        <div class="education-grid">
+          <article class="education-card">
+            <div class="education-date">2024.03 — 2026.02</div>
+            <h3>Pusan National University Graduate School</h3>
+            <p class="degree">M.S. · Information Convergence Engineering (Computer Engineering)</p>
+            <p class="thesis"><strong>Thesis</strong> RAG를 적용한 컨테이너 기반 마이크로서비스의 오류 식별 방법</p>
+          </article>
+          <article class="education-card">
+            <div class="education-date">2022.03 — 2024.02</div>
+            <h3>Dongguk University WISE</h3>
+            <p class="degree">B.S. · Computer Engineering</p>
+          </article>
         </div>
       </div>
     </section>
