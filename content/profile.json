@@ -1,0 +1,43 @@
+{
+  "name": "조대영",
+  "name_en": "Daeyeong Cho",
+  "role": "Software Engineer",
+  "focus": "AI Applications & Cloud Infrastructure",
+  "url": "https://daeyeongcho.github.io/",
+  "email": "jdy5989@naver.com",
+  "github": "https://github.com/DaeyeongCho",
+  "orcid": "https://orcid.org/0009-0005-3903-5723",
+  "intro": "Python과 LLM/RAG로 AI 응용 소프트웨어를 개발하고, Kubernetes 기반 마이크로서비스와 멀티 클라우드 인프라를 다룹니다.",
+  "experience": [
+    {
+      "company": "SmartBank · 스마트뱅크",
+      "role": "Python Developer · AI Service & Backend",
+      "period": "Sep 2026 – Present",
+      "current": true,
+      "summary": "에이젠틱 AI 기반 도면관리 서비스 플랫폼 개발에 참여합니다.",
+      "detail": "Python 기반 백엔드·API와 LLM/RAG를 활용한 문서 검색·분석, AI Agent 연계를 업무 방향으로 삼고 있습니다."
+    },
+    {
+      "company": "부산대학교 소프트웨어공학 연구실 · SELab",
+      "role": "연구원",
+      "period": "Jan 2024 – Feb 2026",
+      "current": false,
+      "summary": "컨테이너 기반 마이크로서비스의 배치·약결합과 RAG 기반 오류 식별·해소 방안 생성 기술을 연구·개발했습니다.",
+      "detail": "한국연구재단 과제와 ETRI 과제에 참여해 명세 분석, AI 적용, 프로토타입 구현 및 멀티 클라우드 운영 지원 도구 개발을 수행했습니다."
+    }
+  ],
+  "education": [
+    {"school": "부산대학교 대학원", "degree": "정보융합공학과 컴퓨터공학전공 · 공학석사", "period": "Mar 2024 – Feb 2026", "gpa": "4.06 / 4.5"},
+    {"school": "동국대학교 WISE캠퍼스", "degree": "ICT·빅데이터학부 컴퓨터공학전공 · 공학사", "period": "Mar 2022 – Feb 2024", "gpa": "4.23 / 4.5"}
+  ],
+  "expertise": [
+    {"title": "AI application development", "description": "운영 데이터에서 필요한 근거를 검색하고, LLM의 답변 생성과 연결합니다.", "tech": "Python · LangChain · ChromaDB · OpenAI API", "work": "rag-microservices"},
+    {"title": "Cloud-native engineering", "description": "마이크로서비스 명세와 통신 관계를 분석해 배치·약결합을 지원합니다.", "tech": "Kubernetes · Docker · LLM Fine-tuning · Jaeger", "work": "microservice-deployment"},
+    {"title": "Multi-cloud tooling", "description": "클라우드 자원 정보를 구조화하고 탐색·추천·모니터링을 위한 도구를 만듭니다.", "tech": "Go · React · AWS · Google Cloud · Prometheus · Grafana · JMeter", "work": "multi-cloud"}
+  ],
+  "additional_tech": "Java · C/C++ · Azure · Linux",
+  "achievements": [
+    {"title": "ACK 2024 한국전자통신연구원(ETRI) 원장상", "detail": "BCE 패턴 기반 배치 유형 식별 연구 · 제1저자", "publication": "ack-2024"},
+    {"title": "컴퓨터프로그램 저작권 등록 5건", "detail": "연구·개발 소프트웨어 관련 등록 실적"}
+  ]
+}

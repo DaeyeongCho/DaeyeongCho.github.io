@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LLM 기반 배치·약결합 | 조대영</title>
+  <meta name="description" content="Kubernetes 명세에서 서비스의 기능·연결 요소를 분석하고, BCE 패턴과 LLM Fine-tuning을 서비스 선택·약결합 배포에 적용했습니다.">
+  <meta name="author" content="Daeyeong Cho">
+  <meta name="theme-color" content="#101e32">
+
+  <link rel="canonical" href="https://daeyeongcho.github.io/work/microservice-deployment/">
+  <meta property="og:title" content="LLM 기반 배치·약결합 | 조대영">
+  <meta property="og:description" content="Kubernetes 명세에서 서비스의 기능·연결 요소를 분석하고, BCE 패턴과 LLM Fine-tuning을 서비스 선택·약결합 배포에 적용했습니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:url" content="https://daeyeongcho.github.io/work/microservice-deployment/">
+  <meta property="og:image" content="https://daeyeongcho.github.io/assets/avatar.png">
+  <meta property="og:image:alt" content="조대영 GitHub 프로필 이미지">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">본문으로 바로가기</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../../index.html#top" aria-label="조대영 포트폴리오 홈"><span class="brand-mark" aria-hidden="true">DC<span>.</span></span><span class="brand-name">Daeyeong Cho</span></a>
+    <nav class="nav" aria-label="주요 메뉴"><a href="../../index.html#work" aria-current="page">Work</a><a href="../../index.html#stack" >Expertise</a><a href="../../index.html#experience" >Experience</a><a href="../../index.html#research" >Research</a><a href="../../index.html#contact" >Contact</a></nav>
+  </div>
+</header><main id="main">
+<section class="case-hero"><div class="container"><a class="back-link" href="../../index.html#work">← Selected Work</a><p class="eyebrow">CASE 02 / MICROSERVICES · LLM FINE-TUNING</p><h1>서비스의 역할을 해석해 요구사항에 맞게 연결하다</h1><p class="case-summary">Kubernetes 명세에서 서비스의 기능·연결 요소를 분석하고, BCE 패턴과 LLM Fine-tuning을 서비스 선택·약결합 배포에 적용했습니다.</p><ul class="tags" aria-label="사용 기술"><li>Python</li><li>Kubernetes</li><li>Docker</li><li>OpenAI API</li><li>LLM Fine-tuning</li></ul></div></section>
+<div class="container case-layout"><aside class="case-meta" aria-label="참여 정보"><h2>Project context</h2><p class="meta-label">ROLE</p><p>SELab 연구원 · 명세 분석, 학습 방법 설계 및 프로토타입 구현</p><p class="meta-label">PROJECT</p><ul class="project-context"><li><strong>컨테이너 기반 마이크로서비스 개발을 위한 스마트 프레임워크 기술</strong><span>한국연구재단(NRF) · 2024.03–2026.01</span></li></ul><nav class="case-nav" aria-label="사례 목차"><a href="#context">배경</a><a href="#contribution">담당한 일</a><a href="#approach">기술적 접근</a><a href="#validation">검증과 범위</a><a href="#resources">Resources</a></nav></aside>
+<div class="case-content"><section id="context"><p class="eyebrow">CONTEXT</p><h2>어떤 문제를 다뤘나요?</h2><p>기존 마이크로서비스를 조합하려면 각 서비스의 기능과 연결 관계를 이해해야 합니다. 사용자 요구사항에서 필요한 서비스를 찾고 연결·배포할 수 있도록, 명세 분석과 배치 유형 식별 방법을 연구했습니다.</p><figure class="flow-diagram"><figcaption>명세 분석과 유형 식별 결과를 서비스 선택·배포에 활용</figcaption><ol class="diagram-steps"><li><span class="step-number">01</span><strong>Kubernetes YAML</strong><span>기능 · 연결 요소</span></li><li><span class="step-number">02</span><strong>BCE + Fine-tuning</strong><span>서비스 유형 식별</span></li><li><span class="step-number">03</span><strong>요구사항 기반 선택</strong><span>약결합 · 배포</span></li></ol><p class="diagram-note">연구·개발 접근을 요약한 개념도</p></figure></section><section id="contribution"><p class="eyebrow">MY CONTRIBUTION</p><h2>직접 담당한 일</h2><article class="implementation-step"><span class="step-number">01</span><div><h3>명세에서 기능·연결 요소 도출</h3><p>Kubernetes YAML의 Pod·Service·Deployment 명세를 분석하고, 서비스 기능과 약결합에 필요한 요소를 구조화했습니다.</p></div></article><article class="implementation-step"><span class="step-number">02</span><div><h3>BCE 패턴을 학습 기준으로 사용</h3><p>Boundary·Control·Entity 패턴을 바탕으로 서비스의 역할과 배치 유형을 구분했습니다. 마이크로서비스 명세와 패턴 유형을 연결한 학습 데이터를 구성하고 LLM Fine-tuning 방법을 설계·검증했습니다.</p></div></article><article class="implementation-step"><span class="step-number">03</span><div><h3>선택에서 약결합 배포까지 연결</h3><p>사용자 기능 요구사항에 적합한 마이크로서비스를 추천하고, 선택한 서비스를 약결합하여 배포하는 프로토타입을 구현·검증했습니다.</p></div></article></section><section id="approach" class="decision"><p class="eyebrow">APPROACH</p><h2>역할 구분을 서비스 조합의 기준으로</h2><p>서비스의 이름만으로 조합을 결정하기보다 명세에서 도출한 기능과 BCE 패턴의 역할을 함께 사용했습니다. 서비스 선택에 필요한 구조적 정보를 LLM이 학습할 수 있는 형태로 정리한 접근입니다.</p></section><section id="validation"><p class="eyebrow">VALIDATION & SCOPE</p><h2>검증과 결과의 범위</h2><p>배치 유형 식별을 위한 학습 방법을 비교하고, 사용자 요구사항 기반 약결합 배포 사례를 통해 제안 방법을 검증했습니다. 관련 제1저자 논문은 ACK 2024 ETRI 원장상을 수상했으며, 연구 결과는 학술지 논문과 공동 특허 출원으로 이어졌습니다.</p><p class="scope-note">RAG 오류 식별 연구와 동일한 NRF 과제에서 수행한 또 하나의 기술 주제입니다. 학술 논문과 특허는 이 연구의 결과물로 연결했습니다.</p></section><section id="resources"><p class="eyebrow">RESOURCES</p><h2>관련 결과물</h2><ul class="resource-list"><li><a class="text-link" href="../../publications/#bce-2025">BCE 패턴 학습에 기반한 사용자 요구사항 맞춤형 마이크로서비스 약결합 배포 방법</a><span>2025 · Journal · 제1저자</span></li><li><a class="text-link" href="../../publications/#coupling-2025">마이크로서비스 아키텍처 결합 결정을 지원하는 학습 기반 관리 방법</a><span>2025 · Journal · 공동저자</span></li><li><a class="text-link" href="../../publications/#ack-2024">BCE 패턴 기반 마이크로서비스 아키텍처의 배치 유형 식별을 위한 생성형 AI 파인튜닝 방법</a><span>2024 · Conference · 제1저자</span></li><li><a class="text-link" href="../../publications/#kcc-2024">생성형 AI를 적용한 컨테이너 기반의 마이크로서비스 배치 기법</a><span>2024 · Conference · 제1저자</span></li><li><a class="text-link" href="../../publications/#patent">생성형 AI 학습 기반 약결합 지원 특허</a><span>공동 발명 · 특허 출원</span></li></ul></section></div></div>
+<div class="container next-work"><span>다음 사례</span><a class="text-link" href="../multi-cloud/">멀티 클라우드 운영 지원 →</a></div>
+</main><footer class="footer"><div class="container footer-inner"><span>© 2026 Daeyeong Cho</span><span>Software · AI · Cloud</span><a class="text-link" href="../../index.html#top">처음으로 ↑</a></div></footer>
+</body>
+</html>

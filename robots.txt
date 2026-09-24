@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /docs/
+Disallow: /scripts/
+Disallow: /content/
+Sitemap: https://daeyeongcho.github.io/sitemap.xml

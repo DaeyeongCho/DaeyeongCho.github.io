@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RAG 기반 오류 식별 | 조대영</title>
+  <meta name="description" content="Kubernetes 운영 정보와 서비스 간 통신 흐름을 분석하고, 기존 사례 검색을 통해 오류 식별과 해소 방안 생성을 지원했습니다.">
+  <meta name="author" content="Daeyeong Cho">
+  <meta name="theme-color" content="#101e32">
+
+  <link rel="canonical" href="https://daeyeongcho.github.io/work/rag-microservices/">
+  <meta property="og:title" content="RAG 기반 오류 식별 | 조대영">
+  <meta property="og:description" content="Kubernetes 운영 정보와 서비스 간 통신 흐름을 분석하고, 기존 사례 검색을 통해 오류 식별과 해소 방안 생성을 지원했습니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:url" content="https://daeyeongcho.github.io/work/rag-microservices/">
+  <meta property="og:image" content="https://daeyeongcho.github.io/assets/avatar.png">
+  <meta property="og:image:alt" content="조대영 GitHub 프로필 이미지">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">본문으로 바로가기</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../../index.html#top" aria-label="조대영 포트폴리오 홈"><span class="brand-mark" aria-hidden="true">DC<span>.</span></span><span class="brand-name">Daeyeong Cho</span></a>
+    <nav class="nav" aria-label="주요 메뉴"><a href="../../index.html#work" aria-current="page">Work</a><a href="../../index.html#stack" >Expertise</a><a href="../../index.html#experience" >Experience</a><a href="../../index.html#research" >Research</a><a href="../../index.html#contact" >Contact</a></nav>
+  </div>
+</header><main id="main">
+<section class="case-hero"><div class="container"><a class="back-link" href="../../index.html#work">← Selected Work</a><p class="eyebrow">CASE 01 / LLM / RAG · OBSERVABILITY</p><h1>마이크로서비스 오류를 식별하고 해소 방안을 제안하다</h1><p class="case-summary">Kubernetes 운영 정보와 서비스 간 통신 흐름을 분석하고, 기존 사례 검색을 통해 오류 식별과 해소 방안 생성을 지원했습니다.</p><ul class="tags" aria-label="사용 기술"><li>Python</li><li>Kubernetes</li><li>Jaeger</li><li>LangChain</li><li>ChromaDB</li><li>OpenAI API</li></ul></div></section>
+<div class="container case-layout"><aside class="case-meta" aria-label="참여 정보"><h2>Project context</h2><p class="meta-label">ROLE</p><p>SELab 연구원 · 오류 분석, RAG 설계·구현 및 실험</p><p class="meta-label">PROJECT</p><ul class="project-context"><li><strong>컨테이너 기반 마이크로서비스 개발을 위한 스마트 프레임워크 기술</strong><span>한국연구재단(NRF) · 2024.03–2026.01</span></li></ul><nav class="case-nav" aria-label="사례 목차"><a href="#context">배경</a><a href="#contribution">담당한 일</a><a href="#approach">기술적 접근</a><a href="#validation">검증과 범위</a><a href="#resources">Resources</a></nav></aside>
+<div class="case-content"><section id="context"><p class="eyebrow">CONTEXT</p><h2>어떤 문제를 다뤘나요?</h2><p>컨테이너가 실행 중이어도 서비스 간 연결이나 기능 수행은 실패할 수 있습니다. 컨테이너 측면의 운영 정보와 마이크로서비스 측면의 통신 흐름을 함께 다루어 오류를 식별하고, 해소에 필요한 근거를 제공하는 연구입니다.</p><figure class="flow-diagram"><figcaption>오류 유형에 따라 서로 다른 근거를 검색하는 연구 흐름</figcaption><ol class="diagram-lanes"><li><span>배포 결과 · 이벤트 · 로그</span><b aria-hidden="true">→</b><span>기존 오류 + 해소 방안</span><b aria-hidden="true">→</b><span>해소 방안 생성</span></li><li><span>Jaeger 통신 흐름</span><b aria-hidden="true">→</b><span>유스케이스 + 정상 흐름</span><b aria-hidden="true">→</b><span>약결합 오류 식별</span></li></ol><p class="diagram-note">연구·개발 접근을 요약한 개념도</p></figure></section><section id="contribution"><p class="eyebrow">MY CONTRIBUTION</p><h2>직접 담당한 일</h2><article class="implementation-step"><span class="step-number">01</span><div><h3>오류를 관찰 가능한 정보로 구조화</h3><p>kubectl apply의 배포 결과, describe의 리소스 이벤트, logs의 컨테이너 로그와 Jaeger의 통신 흐름을 수집·분석했습니다. 배포와 약결합 과정의 오류를 구분하고 총 10가지 오류 유형을 도출했습니다.</p></div></article><article class="implementation-step"><span class="step-number">02</span><div><h3>질문에 맞는 지식 베이스 설계</h3><p>배포 오류는 기존 오류 내용을 임베딩하고 해소 방안은 메타데이터로 분리했습니다. 약결합 오류는 유스케이스와 정상 통신 흐름을 함께 저장해 같은 기능의 정상 동작과 비교하도록 구성했습니다.</p></div></article><article class="implementation-step"><span class="step-number">03</span><div><h3>검색과 답변 생성을 연결</h3><p>Python·LangChain·ChromaDB로 RAG 파이프라인을 구현했습니다. 새 배포 오류와 유사한 사례를 검색해 해소 방안을 생성하고, 수집된 통신 흐름을 정상 흐름과 대조해 약결합 오류 유형을 식별했습니다.</p></div></article></section><section id="approach" class="decision"><p class="eyebrow">APPROACH</p><h2>오류와 해소 방안을 분리한 이유</h2><p>유사 오류를 찾을 때 해소 절차의 문장이 검색 결과를 좌우하지 않도록, 오류 정보만 임베딩하고 해소 방안은 해당 사례의 메타데이터로 보관했습니다. 검색 목적에 맞게 데이터의 역할을 분리한 설계입니다.</p></section><section id="validation"><p class="eyebrow">VALIDATION & SCOPE</p><h2>검증과 결과의 범위</h2><p>오픈소스 마이크로서비스의 오류를 재현하고, Zero-Shot CoT·Self-Refine 등과 오류 식별 결과, 응답 시간, 토큰 사용량을 비교했습니다. 실험 구성과 분석은 석사학위논문 및 관련 공동 연구 논문으로 정리했습니다.</p><p class="scope-note">오류 식별과 해소 방안 생성까지를 다루는 연구 프로토타입입니다. 결과는 운영자가 검토할 오류 유형과 해소 방안으로 제공되며, 실제 운영 환경의 자동 복구 성과를 의미하지 않습니다.</p></section><section id="resources"><p class="eyebrow">RESOURCES</p><h2>관련 결과물</h2><ul class="resource-list"><li><a class="text-link" href="https://github.com/DaeyeongCho/MSAError">오류 재현·통신 흐름 실험 자료 ↗</a><span>공개 실험 자료 저장소</span></li><li><a class="text-link" href="../../publications/#rag-2026">컨테이너 기반 마이크로서비스 오류 처리를 위한 검색 증강 생성 적용 방법</a><span>2026 · Journal · 공동저자</span></li><li><a class="text-link" href="../../publications/#kcc-2025">RAG를 적용한 컨테이너 기반 마이크로서비스 배포 오류 식별 및 해소 방법</a><span>2025 · Conference · 제1저자</span></li><li><a class="text-link" href="../../publications/#ack-2025">컨테이너 기반 마이크로서비스 운영 지원을 위한 검색 증강 생성(RAG) 적용 기법</a><span>2025 · Conference · 공동저자</span></li><li><a class="text-link" href="../../publications/#thesis">RAG를 적용한 컨테이너 기반 마이크로서비스의 오류 식별 방법</a><span>2026 · 석사학위논문</span></li></ul></section></div></div>
+<div class="container next-work"><span>다음 사례</span><a class="text-link" href="../microservice-deployment/">LLM 기반 배치·약결합 →</a></div>
+</main><footer class="footer"><div class="container footer-inner"><span>© 2026 Daeyeong Cho</span><span>Software · AI · Cloud</span><a class="text-link" href="../../index.html#top">처음으로 ↑</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,159 @@
+{
+  "papers": [
+    {
+      "id": "rag-2026",
+      "type": "journal",
+      "year": 2026,
+      "title": "컨테이너 기반 마이크로서비스 오류 처리를 위한 검색 증강 생성 적용 방법",
+      "authors": [
+        "정수민",
+        "조대영",
+        "박준석",
+        "염근혁"
+      ],
+      "venue": "한국차세대컴퓨팅학회 논문지",
+      "volume": "22",
+      "issue": "4",
+      "pages": "22–35",
+      "doi": "10.23019/kingpc.22.4.202608.002",
+      "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003377738",
+      "work": "rag-microservices",
+      "selected": true
+    },
+    {
+      "id": "coupling-2025",
+      "type": "journal",
+      "year": 2025,
+      "title": "마이크로서비스 아키텍처 결합 결정을 지원하는 학습 기반 관리 방법",
+      "authors": [
+        "정수민",
+        "조대영",
+        "박준석",
+        "염근혁"
+      ],
+      "venue": "한국차세대컴퓨팅학회 논문지",
+      "volume": "21",
+      "issue": "5",
+      "pages": "7–21",
+      "doi": "10.23019/kingpc.21.5.202510.001",
+      "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003262747",
+      "work": "microservice-deployment"
+    },
+    {
+      "id": "bce-2025",
+      "type": "journal",
+      "year": 2025,
+      "title": "BCE 패턴 학습에 기반한 사용자 요구사항 맞춤형 마이크로서비스 약결합 배포 방법",
+      "authors": [
+        "조대영",
+        "정수민",
+        "박준석",
+        "염근혁"
+      ],
+      "venue": "정보처리학회 논문지(KTSDE)",
+      "volume": "14",
+      "issue": "1",
+      "pages": "21–31",
+      "doi": "10.3745/TKIPS.2025.14.1.21",
+      "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003171258",
+      "work": "microservice-deployment",
+      "selected": true
+    },
+    {
+      "id": "ack-2025",
+      "type": "conference",
+      "year": 2025,
+      "title": "컨테이너 기반 마이크로서비스 운영 지원을 위한 검색 증강 생성(RAG) 적용 기법",
+      "authors": [
+        "정수민",
+        "조대영",
+        "박준석",
+        "염근혁"
+      ],
+      "venue": "ACK 2025 학술발표대회 논문집",
+      "volume": "32",
+      "issue": "2",
+      "pages": "493–496",
+      "url": "https://kiss.kstudy.com/Detail/Ar?key=4209918",
+      "work": "rag-microservices"
+    },
+    {
+      "id": "kcc-2025",
+      "type": "conference",
+      "year": 2025,
+      "title": "RAG를 적용한 컨테이너 기반 마이크로서비스 배포 오류 식별 및 해소 방법",
+      "authors": [
+        "조대영",
+        "정수민",
+        "박준석",
+        "염근혁"
+      ],
+      "venue": "2025 한국컴퓨터종합학술대회(KCC 2025)",
+      "pages": "388–390",
+      "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318188",
+      "work": "rag-microservices"
+    },
+    {
+      "id": "ack-2024",
+      "type": "conference",
+      "year": 2024,
+      "title": "BCE 패턴 기반 마이크로서비스 아키텍처의 배치 유형 식별을 위한 생성형 AI 파인튜닝 방법",
+      "authors": [
+        "조대영",
+        "정수민",
+        "박준석",
+        "염근혁"
+      ],
+      "venue": "ACK 2024 학술발표대회 논문집",
+      "volume": "31",
+      "issue": "2",
+      "pages": "451–454",
+      "url": "https://kiss.kstudy.com/Detail/Ar?key=4155949",
+      "award": "한국전자통신연구원(ETRI) 원장상",
+      "work": "microservice-deployment"
+    },
+    {
+      "id": "kcc-2024",
+      "type": "conference",
+      "year": 2024,
+      "title": "생성형 AI를 적용한 컨테이너 기반의 마이크로서비스 배치 기법",
+      "authors": [
+        "조대영",
+        "정수민",
+        "박준석",
+        "염근혁"
+      ],
+      "venue": "2024 한국컴퓨터종합학술대회(KCC 2024)",
+      "pages": "313–315",
+      "work": "microservice-deployment",
+      "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11861829"
+    }
+  ],
+  "thesis": {
+    "title": "RAG를 적용한 컨테이너 기반 마이크로서비스의 오류 식별 방법",
+    "author": "조대영",
+    "institution": "부산대학교 대학원",
+    "degree": "공학석사 학위논문",
+    "year": 2026
+  },
+  "patent": {
+    "title": "생성형 AI 학습에 기반한 마이크로서비스 약결합 지원 방법 및 시스템",
+    "original_title": "생성형 AI 학습 기반 마이크로서비스 약결합 지원 시스템 및 방법",
+    "summary": "마이크로서비스 명세와 명세 구분 방안을 생성형 AI 학습에 활용하여 마이크로서비스 약결합을 지원하는 기술입니다.",
+    "inventors": [
+      "염근혁",
+      "조대영",
+      "박준석",
+      "정수민"
+    ],
+    "assignee": "부산대학교 산학협력단",
+    "application": "10-2025-0004204",
+    "filed": "2025-01-10",
+    "priority_application": "10-2024-0150030",
+    "priority_date": "2024-10-29",
+    "publication": "10-2026-0065458",
+    "published": "2026-05-08",
+    "status": "특허 출원 · 공개",
+    "url": "https://patents.google.com/patent/KR20260065458A/ko"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "daeyeong-cho-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static GitHub Pages portfolio. Node dependencies are for verification only.",
+  "scripts": {
+    "build": "python3 scripts/build.py",
+    "check": "python3 scripts/build.py --check && python3 scripts/check.py",
+    "preview": "python3 scripts/serve.py",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.63.0"
+  }
+}
