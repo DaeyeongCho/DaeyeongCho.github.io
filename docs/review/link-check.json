@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://doi.org/10.23019/kingpc.21.5.202510.001",
+    "status": 200,
+    "destination": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003262747"
+  },
+  {
+    "url": "https://doi.org/10.23019/kingpc.22.4.202608.002",
+    "status": 200,
+    "destination": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003377738"
+  },
+  {
+    "url": "https://doi.org/10.3745/TKIPS.2025.14.1.21",
+    "status": 200,
+    "destination": "https://koreascience.or.kr/article/JAKO202506561205209.page"
+  },
+  {
+    "url": "https://github.com/DaeyeongCho",
+    "status": 200,
+    "destination": "https://github.com/DaeyeongCho"
+  },
+  {
+    "url": "https://github.com/DaeyeongCho/MSAError",
+    "status": 200,
+    "destination": "https://github.com/DaeyeongCho/MSAError"
+  },
+  {
+    "url": "https://github.com/cloud-barista/cb-tumblebug/issues/2249",
+    "status": 200,
+    "destination": "https://github.com/cloud-barista/cb-tumblebug/issues/2249"
+  },
+  {
+    "url": "https://kiss.kstudy.com/Detail/Ar?key=4155949",
+    "status": 200,
+    "destination": "https://kiss.kstudy.com/Detail/Ar?key=4155949"
+  },
+  {
+    "url": "https://kiss.kstudy.com/Detail/Ar?key=4209918",
+    "status": 200,
+    "destination": "https://kiss.kstudy.com/Detail/Ar?key=4209918"
+  },
+  {
+    "url": "https://orcid.org/0009-0005-3903-5723",
+    "status": 200,
+    "destination": "https://orcid.org/0009-0005-3903-5723"
+  },
+  {
+    "url": "https://patents.google.com/patent/KR20260065458A/ko",
+    "status": 200,
+    "destination": "https://patents.google.com/patent/KR20260065458A/ko"
+  },
+  {
+    "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11861829",
+    "error": "HTTP Error 502: Bad Gateway"
+  },
+  {
+    "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318188",
+    "error": "HTTP Error 502: Bad Gateway"
+  },
+  {
+    "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003171258",
+    "status": 200,
+    "destination": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003171258"
+  },
+  {
+    "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003262747",
+    "status": 200,
+    "destination": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003262747"
+  },
+  {
+    "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003377738",
+    "error": "<urlopen error timed out>"
+  }
+]
