@@ -27,7 +27,12 @@ for (const width of [360, 390, 768, 1440]) {
       await expect(page.locator('h1')).toBeVisible();
       await expect(page.getByRole('navigation', { name: '주요 메뉴' })).toBeVisible();
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-      expect(await page.evaluate(() => [...document.images].every(i => i.complete && i.naturalWidth > 0))).toBe(true);
+      // Lazy images load when their section enters the viewport.
+      for (const image of await page.locator('img').all()) {
+        await image.scrollIntoViewIfNeeded();
+        await expect.poll(() => image.evaluate(el => el.complete && el.naturalWidth > 0)).toBe(true);
+      }
+      await page.evaluate(() => window.scrollTo(0, 0));
       // Verify actual computed styling, rather than accepting an unstyled document.
       expect(await page.locator('body').evaluate(el => getComputedStyle(el).backgroundColor)).toBe('rgb(252, 252, 250)');
       if (width === 390 || width === 1440) {
